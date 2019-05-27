@@ -87,11 +87,19 @@ namespace WebX.COMMON
             }
 
         }
-
-        public static int ExcuteNonQuery(MySqlConnection conn,string mysqlString)
+        /// <summary>
+        /// 赠删改数据，使用 ExecuteNonQuery数据受影响条数
+        /// </summary>
+        /// <param name="conn"></param>
+        /// <param name="mysqlString"></param>
+        /// <param name="cmdParms"></param>
+        /// <returns></returns>
+        public static int ExcuteNonQuery(MySqlConnection conn,string mysqlString,MySqlParameter[] cmdParms)
         {
-            int a = 0;
-            return a;
+            MySqlCommand cmd = new MySqlCommand();
+            PrepareCommand(cmd, conn, null, mysqlString, cmdParms);
+            int val = cmd.ExecuteNonQuery(); 
+            return val;
         }
 
         private static void PrepareCommand(MySqlCommand cmd,MySqlConnection conn,MySqlTransaction trans,string mysqlString, MySqlParameter[] cmdParms)
@@ -107,6 +115,7 @@ namespace WebX.COMMON
                 cmd.Transaction = trans;
             }
             cmd.CommandType = CommandType.Text;//cmdType,默认为Text（CommandType.Text,CommandType.StoredProcedur与CommandType.TableDirect）
+
             if (cmdParms != null)
             {
                 foreach (MySqlParameter parm in cmdParms)
