@@ -7,3 +7,12 @@ E:\xieProject\WebX\WebX.COMMON\bin\Debug\netcoreapp2.1\WebX.COMMON.pdb
 E:\xieProject\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.dll
 E:\xieProject\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.pdb
 E:\xieProject\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.csprojAssemblyReference.cache
+E:\xieProject\WebXClone\WebX\WebX.COMMON\bin\Debug\netcoreapp2.1\WebX.COMMON.deps.json
+E:\xieProject\WebXClone\WebX\WebX.COMMON\bin\Debug\netcoreapp2.1\WebX.COMMON.dll
+E:\xieProject\WebXClone\WebX\WebX.COMMON\bin\Debug\netcoreapp2.1\WebX.COMMON.pdb
+E:\xieProject\WebXClone\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.csprojAssemblyReference.cache
+E:\xieProject\WebXClone\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.csproj.CoreCompileInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.AssemblyInfoInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.AssemblyInfo.cs
+E:\xieProject\WebXClone\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.dll
+E:\xieProject\WebXClone\WebX\WebX.COMMON\obj\Debug\netcoreapp2.1\WebX.COMMON.pdb

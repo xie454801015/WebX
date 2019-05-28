@@ -7,24 +7,27 @@ using System.Text;
 
 namespace WebX.COMMON
 {
-    class DbHelperMySql
+    public class DbHelperMySql
     {
         //数据库连接字符串
-        public static string connname = "server = localhost; port=3306;user=root;password=chenliji1; database=aspnet;SslMode = none;charset='utf8';pooling=true";
+        private static string connstring;
+        //private static string connstring = "server = localhost; port=3306;user=root;password=11111; database=xxxx;SslMode = none;charset='utf8';pooling=true";
+
+        public static string ConnString{ get { return connstring; } set {connstring=value; } }
 
         // 用于缓存参数的HASH表
         private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());
 
         /// <summary>
-        /// ExcutReader查询
+        /// ExcuteReader查询
         /// </summary>
         /// <param name="connectionString">数据库连接string</param>
-        /// <param name="mysqlString"></param>
+        /// <param name="mysqlString">mysql语句</param>
         /// <returns></returns>
-        public static MySqlDataReader ExcutReader(string connectionString,string mysqlString)
+        public static MySqlDataReader ExcutReader(string mysqlString)
         {   
             //新建一个数据库连接
-            using (MySqlConnection conn = new MySqlConnection( connectionString))
+            using (MySqlConnection conn = new MySqlConnection( ConnString))
             {
                 using (MySqlCommand cmd = new MySqlCommand(mysqlString,conn))
                 {
@@ -52,15 +55,16 @@ namespace WebX.COMMON
 
             }
         }
+
         /// <summary>
         /// Dataset查询
         /// </summary>
         /// <param name="connectionString"></param>
         /// <param name="mysqlString"></param>
         /// <returns></returns>
-        public static DataSet Query(string connectionString,string mysqlString)
+        public static DataSet Query(string mysqlString)
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(ConnString))
             {
                 DataSet ds = new DataSet();
                 try
@@ -87,6 +91,47 @@ namespace WebX.COMMON
             }
 
         }
+
+        /// <summary>
+        /// ExceuteScalar执行一条计算查询结果语句，返回查询结果（object），用于获取数量，结果建议用Conver.ToInt32转换；
+        /// </summary>
+        /// <param name="connectionString"></param>
+        /// <param name="mysqlString"></param>
+        /// <returns></returns>
+        public static object GetSingele(string mysqlString)
+        {
+            using (MySqlConnection conn = new MySqlConnection(ConnString))
+            {
+                using (MySqlCommand cmd = new MySqlCommand(mysqlString, conn))
+                {
+                    try
+                    {
+                        conn.Open();
+                        object obj = cmd.ExecuteScalar();
+                        if ((object.Equals(obj, null)) || (object.Equals(obj, System.DBNull.Value)))
+                        {
+                            return null;
+                        }
+                        else
+                        {
+                            return obj;
+                        }
+                    }
+                    catch (MySqlException e)
+                    {
+                        throw new Exception(e.Message);
+                    }
+                    finally
+                    {
+                        if (conn.State != ConnectionState.Closed)
+                        {
+                            conn.Close();
+                        }
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// 赠删改数据，使用 ExecuteNonQuery数据受影响条数
         /// </summary>
@@ -95,10 +140,11 @@ namespace WebX.COMMON
         /// <param name="cmdParms"></param>
         /// <returns></returns>
         public static int ExcuteNonQuery(MySqlConnection conn,string mysqlString,MySqlParameter[] cmdParms)
-        {
+        {   
             MySqlCommand cmd = new MySqlCommand();
             PrepareCommand(cmd, conn, null, mysqlString, cmdParms);
-            int val = cmd.ExecuteNonQuery(); 
+            int val = cmd.ExecuteNonQuery();
+            cmd.Parameters.Clear();
             return val;
         }
 
