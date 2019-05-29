@@ -4692,6 +4692,23 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "WebX.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "MySql.Data": "8.0.16",
+          "WebX.COMMON": "1.0.0",
+          "WebX.DAL": "1.0.0",
+          "WebX.MODEL": "1.0.0",
+          "WebX.Utility": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebX.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.BLL.dll": {}
+        }
+      },
       "WebX.COMMON/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -4704,6 +4721,41 @@
         },
         "runtime": {
           "bin/placeholder/WebX.COMMON.dll": {}
+        }
+      },
+      "WebX.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "MySql.Data": "8.0.16",
+          "WebX.COMMON": "1.0.0",
+          "WebX.MODEL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebX.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.DAL.dll": {}
+        }
+      },
+      "WebX.MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        }
+      },
+      "WebX.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/WebX.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.Utility.dll": {}
         }
       }
     }
@@ -12798,10 +12850,30 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "WebX.BLL/1.0.0": {
+      "type": "project",
+      "path": "../WebX.DLL/WebX.BLL.csproj",
+      "msbuildProject": "../WebX.DLL/WebX.BLL.csproj"
+    },
     "WebX.COMMON/1.0.0": {
       "type": "project",
       "path": "../WebX.COMMON/WebX.COMMON.csproj",
       "msbuildProject": "../WebX.COMMON/WebX.COMMON.csproj"
+    },
+    "WebX.DAL/1.0.0": {
+      "type": "project",
+      "path": "../WebX.DBL/WebX.DAL.csproj",
+      "msbuildProject": "../WebX.DBL/WebX.DAL.csproj"
+    },
+    "WebX.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../WebX.MODEL/WebX.MODEL.csproj",
+      "msbuildProject": "../WebX.MODEL/WebX.MODEL.csproj"
+    },
+    "WebX.Utility/1.0.0": {
+      "type": "project",
+      "path": "../WebX.Utility/WebX.Utility.csproj",
+      "msbuildProject": "../WebX.Utility/WebX.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12811,7 +12883,11 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.4.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
-      "WebX.COMMON >= 1.0.0"
+      "WebX.BLL >= 1.0.0",
+      "WebX.COMMON >= 1.0.0",
+      "WebX.DAL >= 1.0.0",
+      "WebX.MODEL >= 1.0.0",
+      "WebX.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12846,6 +12922,18 @@
           "projectReferences": {
             "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
               "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
+            },
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj"
+            },
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj"
+            },
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            },
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj"
             }
           }
         }

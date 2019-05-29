@@ -27,7 +27,7 @@ namespace WebX.MODEL
         /// <summary>
         /// 创建时间
         /// </summary>
-        public DateTime FileTime { get; set; }
+        public DateTime FillTime { get; set; }
         /// <summary>
         /// 创建操作者编号
         /// </summary>

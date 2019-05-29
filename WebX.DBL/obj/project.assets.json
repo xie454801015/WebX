@@ -502,6 +502,16 @@
         "runtime": {
           "bin/placeholder/WebX.COMMON.dll": {}
         }
+      },
+      "WebX.MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        }
       }
     }
   },
@@ -1834,12 +1844,19 @@
       "type": "project",
       "path": "../WebX.COMMON/WebX.COMMON.csproj",
       "msbuildProject": "../WebX.COMMON/WebX.COMMON.csproj"
+    },
+    "WebX.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../WebX.MODEL/WebX.MODEL.csproj",
+      "msbuildProject": "../WebX.MODEL/WebX.MODEL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "WebX.COMMON >= 1.0.0"
+      "MySql.Data >= 8.0.16",
+      "WebX.COMMON >= 1.0.0",
+      "WebX.MODEL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1874,6 +1891,9 @@
           "projectReferences": {
             "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
               "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
+            },
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
             }
           }
         }
@@ -1892,6 +1912,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.16, )"
           }
         },
         "imports": [

@@ -19,6 +19,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebX.COMMON\WebX.COMMON.csproj" />
+    <ProjectReference Include="..\WebX.DBL\WebX.DAL.csproj" />
+    <ProjectReference Include="..\WebX.DLL\WebX.BLL.csproj" />
+    <ProjectReference Include="..\WebX.MODEL\WebX.MODEL.csproj" />
+    <ProjectReference Include="..\WebX.Utility\WebX.Utility.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="" /></VisualStudio></ProjectExtensions>

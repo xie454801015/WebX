@@ -1,0 +1,12 @@
+E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.DAL.deps.json
+E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.DAL.dll
+E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.DAL.pdb
+E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.COMMON.dll
+E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.COMMON.pdb
+E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.csprojAssemblyReference.cache
+E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.csproj.CoreCompileInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.AssemblyInfoInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.AssemblyInfo.cs
+E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.csproj.CopyComplete
+E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.dll
+E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.pdb

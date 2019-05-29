@@ -50,3 +50,11 @@ E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.Views.pdb
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.csproj.CopyComplete
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.dll
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.pdb
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.BLL.dll
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DAL.dll
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.Utility.dll
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DAL.pdb
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.BLL.pdb
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.Utility.pdb

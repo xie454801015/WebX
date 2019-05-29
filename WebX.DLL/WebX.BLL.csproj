@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WebX.COMMON\WebX.COMMON.csproj" />
     <ProjectReference Include="..\WebX.DBL\WebX.DAL.csproj" />
+    <ProjectReference Include="..\WebX.MODEL\WebX.MODEL.csproj" />
+    <ProjectReference Include="..\WebX.Utility\WebX.Utility.csproj" />
   </ItemGroup>
 
 </Project>

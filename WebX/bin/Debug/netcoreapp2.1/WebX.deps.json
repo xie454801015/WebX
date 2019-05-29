@@ -29,7 +29,11 @@
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.4.10",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
-          "WebX.COMMON": "1.0.0"
+          "WebX.BLL": "1.0.0",
+          "WebX.COMMON": "1.0.0",
+          "WebX.DAL": "1.0.0",
+          "WebX.MODEL": "1.0.0",
+          "WebX.Utility": "1.0.0"
         },
         "runtime": {
           "WebX.dll": {}
@@ -595,6 +599,20 @@
           }
         }
       },
+      "WebX.BLL/1.0.0": {
+        "dependencies": {
+          "WebX.COMMON": "1.0.0",
+          "WebX.DAL": "1.0.0",
+          "WebX.MODEL": "1.0.0",
+          "WebX.Utility": "1.0.0"
+        },
+        "runtime": {
+          "WebX.BLL.dll": {}
+        },
+        "compile": {
+          "WebX.BLL.dll": {}
+        }
+      },
       "WebX.COMMON/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
@@ -605,6 +623,33 @@
         },
         "compile": {
           "WebX.COMMON.dll": {}
+        }
+      },
+      "WebX.DAL/1.0.0": {
+        "dependencies": {
+          "WebX.COMMON": "1.0.0"
+        },
+        "runtime": {
+          "WebX.DAL.dll": {}
+        },
+        "compile": {
+          "WebX.DAL.dll": {}
+        }
+      },
+      "WebX.MODEL/1.0.0": {
+        "runtime": {
+          "WebX.MODEL.dll": {}
+        },
+        "compile": {
+          "WebX.MODEL.dll": {}
+        }
+      },
+      "WebX.Utility/1.0.0": {
+        "runtime": {
+          "WebX.Utility.dll": {}
+        },
+        "compile": {
+          "WebX.Utility.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3782,7 +3827,27 @@
       "path": "system.security.cryptography.protecteddata/4.4.0",
       "hashPath": "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
     },
+    "WebX.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "WebX.COMMON/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebX.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebX.MODEL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebX.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

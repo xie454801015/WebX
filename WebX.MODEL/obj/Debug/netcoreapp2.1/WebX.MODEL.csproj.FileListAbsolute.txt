@@ -1,0 +1,9 @@
+E:\xieProject\WebXClone\WebX\WebX.MODEL\bin\Debug\netcoreapp2.1\WebX.MODEL.deps.json
+E:\xieProject\WebXClone\WebX\WebX.MODEL\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\xieProject\WebXClone\WebX\WebX.MODEL\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.csprojAssemblyReference.cache
+E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.csproj.CoreCompileInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.AssemblyInfoInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.AssemblyInfo.cs
+E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.pdb

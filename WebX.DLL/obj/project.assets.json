@@ -507,13 +507,35 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "WebX.COMMON": "1.0.0"
+          "MySql.Data": "8.0.16",
+          "WebX.COMMON": "1.0.0",
+          "WebX.MODEL": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WebX.DAL.dll": {}
         },
         "runtime": {
           "bin/placeholder/WebX.DAL.dll": {}
+        }
+      },
+      "WebX.MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        }
+      },
+      "WebX.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/WebX.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.Utility.dll": {}
         }
       }
     }
@@ -1852,13 +1874,26 @@
       "type": "project",
       "path": "../WebX.DBL/WebX.DAL.csproj",
       "msbuildProject": "../WebX.DBL/WebX.DAL.csproj"
+    },
+    "WebX.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../WebX.MODEL/WebX.MODEL.csproj",
+      "msbuildProject": "../WebX.MODEL/WebX.MODEL.csproj"
+    },
+    "WebX.Utility/1.0.0": {
+      "type": "project",
+      "path": "../WebX.Utility/WebX.Utility.csproj",
+      "msbuildProject": "../WebX.Utility/WebX.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
+      "MySql.Data >= 8.0.16",
       "WebX.COMMON >= 1.0.0",
-      "WebX.DAL >= 1.0.0"
+      "WebX.DAL >= 1.0.0",
+      "WebX.MODEL >= 1.0.0",
+      "WebX.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1868,9 +1903,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.DLL.csproj",
-      "projectName": "WebX.DLL",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.DLL.csproj",
+      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj",
+      "projectName": "WebX.BLL",
+      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
       "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\obj\\",
       "projectStyle": "PackageReference",
@@ -1896,6 +1931,12 @@
             },
             "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj": {
               "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj"
+            },
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            },
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj"
             }
           }
         }
@@ -1914,6 +1955,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.16, )"
           }
         },
         "imports": [

@@ -1,0 +1,9 @@
+E:\xieProject\WebXClone\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\WebX.Utility.deps.json
+E:\xieProject\WebXClone\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\WebX.Utility.dll
+E:\xieProject\WebXClone\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\WebX.Utility.pdb
+E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.csprojAssemblyReference.cache
+E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.csproj.CoreCompileInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.AssemblyInfoInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.AssemblyInfo.cs
+E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.dll
+E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.pdb
