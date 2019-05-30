@@ -33,41 +33,46 @@ namespace WebX.Areas.Article.Controllers
             return View();
         }
 
+        public IActionResult Form(string id)
+        {
+            try
+            {
+                return null;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         #endregion
 
-        #region 查询数据
+        #region 查询数据（已调试基本无问题）；
         public IActionResult GetDataLiset(Pagination pagination)
         {
             //由请求自动反序列化生成实例输入。自动匹配熟悉；
             try
             {
+                var a = Request.Form["title"];
                 List<object> data = new List<object>();
                 string strWhere = "";
-                strWhere += $" TITLE like '%{ Request.Form["title"]}%'";
+                if (Request.Form["title"].ToString().IsNotNullOrEmpty())
+                    strWhere += $" TITLE like '%{ Request.Form["title"]}%'";
                 pagination.OrderField = "LineNo";
                 var dataList = articlesBusiness.GetPageList(strWhere, pagination);
                 if (dataList != null)
                 {
                     string jsonlist = JsonConvert.SerializeObject(pagination.BuildTablerResult_DataTable(dataList));
-                    //return Json(jsonlist);
-                    return Content(jsonlist);
+                    return Json(jsonlist);
+                    //return Content(jsonlist);
+                    //return Json(data,JsonRequestBehavior.AllowGet);
                 }
                 else { return null; }
-                // 判断字符串非空
-                //if (Request.Form["title"])
-                //{
-                //    strWhere += $" TITLE like '%{ Request["title"]}%'";
-                //}
-                //return Json(data,JsonRequestBehavior.AllowGet);
             }
-
             catch
             {
                 return null;
             }
-
-
-
         }
         #endregion
 
@@ -87,9 +92,7 @@ namespace WebX.Areas.Article.Controllers
                 {
                     blnResult = articlesBusiness.Update(theData);
                 }
-
-
-                int a = 1;
+                string a = "success";
                 return Json(a);
             }
             catch
@@ -97,7 +100,29 @@ namespace WebX.Areas.Article.Controllers
                 return null;
             }
         }
-
         #endregion
+
+        #region 删除数据
+        public ActionResult DeleteData(string ids)
+        {
+            try
+            {
+                var idlist = JsonConvert.DeserializeObject<Array>(ids);
+                if (articlesBusiness.DeleteList(string.Join(",", idlist)))
+                {
+                    return null;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        #endregion
+
     }
 }

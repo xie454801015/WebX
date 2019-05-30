@@ -10,3 +10,5 @@ E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.AssemblyI
 E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.csproj.CopyComplete
 E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.dll
 E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.pdb
+E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb

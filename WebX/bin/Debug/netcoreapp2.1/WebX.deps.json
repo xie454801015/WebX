@@ -601,6 +601,7 @@
       },
       "WebX.BLL/1.0.0": {
         "dependencies": {
+          "MySql.Data": "8.0.16",
           "WebX.COMMON": "1.0.0",
           "WebX.DAL": "1.0.0",
           "WebX.MODEL": "1.0.0",
@@ -627,7 +628,9 @@
       },
       "WebX.DAL/1.0.0": {
         "dependencies": {
-          "WebX.COMMON": "1.0.0"
+          "MySql.Data": "8.0.16",
+          "WebX.COMMON": "1.0.0",
+          "WebX.MODEL": "1.0.0"
         },
         "runtime": {
           "WebX.DAL.dll": {}

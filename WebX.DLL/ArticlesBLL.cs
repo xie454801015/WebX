@@ -14,7 +14,7 @@ namespace WebX.BLL
     {   
 
         //创建一个DAL实例，输入的参数为表名字
-        WebX.DAL.ArticlesDBL dal = new WebX.DAL.ArticlesDBL("article");
+        WebX.DAL.ArticlesDBL dal = new WebX.DAL.ArticlesDBL("articles");
 
 
         /// <summary>
@@ -46,9 +46,12 @@ namespace WebX.BLL
         {
             try
             {
+               
                 string strWhere = "1=1";
-                //@强制不转义
-                strWhere += $@" and {where}";
+                if (where.IsNotNullOrEmpty())
+                {//@强制不转义
+                    strWhere += $@" and {where}";
+                }
                 pagination.Records = GetCount(strWhere);
                 DataSet pagelist = dal.GetPageList(strWhere, pagination.OrderField, pagination.PageIndex, pagination.PageRows);
                 return DataSetHelper.DataSetToEntityList<MODEL.ArticlesMD>(pagelist, -1).ToList();
@@ -125,6 +128,37 @@ namespace WebX.BLL
                     }
                 }
             }
+        }
+
+        public bool DeleteList(string strLineNoList)
+        {
+            using (MySqlConnection conn = new MySqlConnection(WebX.COMMON.DbHelperMySql.ConnString))
+            {
+                conn.Open();
+                // 创建事务对象
+                using (MySqlTransaction scope = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        if (dal.DeleteList(conn,strLineNoList))
+                        {
+                            scope.Commit();
+                            return true;
+                        }
+
+                    }
+                    catch
+                    {
+                        return false;
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                }
+            }
+
+            return true;
         }
 
     }

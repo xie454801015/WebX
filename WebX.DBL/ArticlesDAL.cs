@@ -123,5 +123,15 @@ namespace WebX.DAL
 
             return true;
         }
+
+        public bool DeleteList(MySqlConnection conn, string strLineNoList)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("delete from " + table_name);
+            strSql.Append(" where LineNo in (" + strLineNoList + ")");
+            DbHelperMySql.ExcuteNonQuery(conn, strSql.ToString(),null);
+            return true;
+
+        }
     }
 }

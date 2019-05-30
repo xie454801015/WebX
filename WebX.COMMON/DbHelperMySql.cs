@@ -100,6 +100,8 @@ namespace WebX.COMMON
         /// <returns></returns>
         public static object GetSingele(string mysqlString)
         {
+            MySqlConnection connp = new MySqlConnection(ConnString);
+            connp.Open();
             using (MySqlConnection conn = new MySqlConnection(ConnString))
             {
                 using (MySqlCommand cmd = new MySqlCommand(mysqlString, conn))
