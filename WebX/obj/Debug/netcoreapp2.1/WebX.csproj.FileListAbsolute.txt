@@ -59,3 +59,4 @@ E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.BLL.pdb
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.Utility.pdb
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Article\Views\Articles\Form.g.cshtml.cs
+E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Register.g.cshtml.cs

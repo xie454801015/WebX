@@ -141,13 +141,21 @@ namespace WebX.COMMON
         /// <param name="mysqlString"></param>
         /// <param name="cmdParms"></param>
         /// <returns></returns>
-        public static int ExcuteNonQuery(MySqlConnection conn,string mysqlString,MySqlParameter[] cmdParms)
+        public static int ExcuteNonQuery(MySqlConnection conn,string mysqlString,params MySqlParameter[] cmdParms)
         {   
             MySqlCommand cmd = new MySqlCommand();
             PrepareCommand(cmd, conn, null, mysqlString, cmdParms);
-            int val = cmd.ExecuteNonQuery();
-            cmd.Parameters.Clear();
-            return val;
+            try {
+                int val = cmd.ExecuteNonQuery();
+                cmd.Parameters.Clear();
+                return val;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+                return 0;
+            }
+           
         }
 
         private static void PrepareCommand(MySqlCommand cmd,MySqlConnection conn,MySqlTransaction trans,string mysqlString, MySqlParameter[] cmdParms)
@@ -167,7 +175,14 @@ namespace WebX.COMMON
             if (cmdParms != null)
             {
                 foreach (MySqlParameter parm in cmdParms)
+                {
+                    if ((parm.Direction == ParameterDirection.InputOutput || parm.Direction == ParameterDirection.Input) &&
+                        (parm.Value == null))
+                    {
+                        parm.Value = DBNull.Value;
+                    }
                     cmd.Parameters.Add(parm);
+                }
             }
 
         }

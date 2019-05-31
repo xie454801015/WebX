@@ -12,10 +12,8 @@ namespace WebX.BLL
 {
     public class ArticlesBLL
     {   
-
         //创建一个DAL实例，输入的参数为表名字
-        WebX.DAL.ArticlesDBL dal = new WebX.DAL.ArticlesDBL("articles");
-
+        WebX.DAL.ArticlesDAL dal = new WebX.DAL.ArticlesDAL("articles");
 
         /// <summary>
         /// 获取数据总条数
@@ -34,7 +32,6 @@ namespace WebX.BLL
                 return 0;
             }
         }
-
 
         /// <summary>
         /// 获取数据库查询集
@@ -63,7 +60,6 @@ namespace WebX.BLL
             }
         }
 
-
         /// <summary>
         /// 增加数据
         /// </summary>
@@ -84,10 +80,10 @@ namespace WebX.BLL
                             scope.Commit();
                             return true;
                         }
-
                     }
                     catch
                     {
+                        scope.Rollback();
                         return false;
                     }
                     finally
@@ -96,10 +92,13 @@ namespace WebX.BLL
                     }
                 }
             }
-
-            return true;
+            return false;
         }
-
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public bool Update(WebX.MODEL.ArticlesMD model)
         {
             using (MySqlConnection conn = new MySqlConnection(WebX.COMMON.DbHelperMySql.ConnString))
@@ -129,7 +128,11 @@ namespace WebX.BLL
                 }
             }
         }
-
+        /// <summary>
+        /// 删除数据
+        /// </summary>
+        /// <param name="strLineNoList"></param>
+        /// <returns></returns>
         public bool DeleteList(string strLineNoList)
         {
             using (MySqlConnection conn = new MySqlConnection(WebX.COMMON.DbHelperMySql.ConnString))

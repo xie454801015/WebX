@@ -7,21 +7,21 @@ using WebX.MODEL;
 
 namespace WebX.DAL
 {
-    public partial class ArticlesDBL
+    public partial class ArticlesDAL
     {
 
         private string table_name;
-        public ArticlesDBL(string tableName)
+        public ArticlesDAL(string tableName)
         {
             table_name = tableName;
         }
 
-        //public bool Exists(string field,var field_value)
+        //public bool Exists(string field, string field_value)
         //{
         //    StringBuilder mysqlString = new StringBuilder();
         //    mysqlString.Append("select count(1) from");
-        //    mysqlString.Append(" "+ table_name+" where");
-        //    mysqlString.Append(blank+field+" = :")
+        //    mysqlString.Append(" " + table_name + " where");
+        //    mysqlString.Append(" "+ field + " = "+field_value)
         //}
 
         /// <summary>
@@ -67,22 +67,23 @@ namespace WebX.DAL
             int n = 0;
             strSql.Append("insert into " + table_name+" (");
             //添加插入字段
-            strSql.Append(" ");
+            strSql.Append("Type,Title,Content,FillTime,FillOPer,FillOperName");
+            
             strSql.Append(") value (");
-            strSql.Append(" @LineNO,@Type,@Title,@Content,@FillTime,@FillOper,@FillOperName");
+            strSql.Append(" @Type,@Title,@Content,@FillTime,@FillOper,@FillOperName");
             strSql.Append(") ");
 
             //构建MySqlParameter
             MySqlParameter[] parameters = {
-                new MySqlParameter("@LineNO",MySqlDbType.Int32),
+                //new MySqlParameter("@LineNO",MySqlDbType.Int32),
                 new MySqlParameter("@Type",MySqlDbType.Int32),
-                new MySqlParameter("@Title",MySqlDbType.VarChar,256),
-                new MySqlParameter("@Content",MySqlDbType.VarChar,4000),
+                new MySqlParameter("@Title",MySqlDbType.VarChar),
+                new MySqlParameter("@Content",MySqlDbType.Text),
                 new MySqlParameter("@FillTime",MySqlDbType.Date),
                 new MySqlParameter("@FilleOper",MySqlDbType.VarChar,256),
                 new MySqlParameter("@FillOperName",MySqlDbType.VarChar,256),
             };
-            parameters[n++].Value = model.LineNo;
+            //parameters[n++].Value = model.LineNo;
             parameters[n++].Value = model.Type;
             parameters[n++].Value = model.Title;
             parameters[n++].Value = model.Content;
@@ -99,7 +100,7 @@ namespace WebX.DAL
         {
             StringBuilder strSql = new StringBuilder();
             int n = 0;
-            strSql.Append("updatae " + table_name + " set ");
+            strSql.Append("update " + table_name + " set ");
             //strSql.Append("LineNO = @LineNO ,");
             strSql.Append("Type = @Type ,");
             strSql.Append("Title = @Title ,");

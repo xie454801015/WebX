@@ -11,7 +11,7 @@ namespace Homework.Models
     public class MysqlHelper
     {
         //数据库连接字符串
-        public static string connname = "server = localhost; port=3306;user=root;password=chenliji1; database=aspnet;SslMode = none;charset='utf8';pooling=true";
+        public static string connname = "";
 
         // 用于缓存参数的HASH表
         private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());

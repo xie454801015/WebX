@@ -33,6 +33,7 @@ namespace WebX
             //services.Configure<DBsetting>(options => Configuration.GetConnectionString("MySqlConnection"));
             //services.Configure<DBsetting>(options => Configuration.GetConnectionString("MySqlConnection"));
             services.AddOptions().Configure<DBsetting>(Configuration);
+            
         }
 
 
