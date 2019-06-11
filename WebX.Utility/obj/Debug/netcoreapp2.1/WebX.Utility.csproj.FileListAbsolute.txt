@@ -7,3 +7,12 @@ E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.A
 E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.AssemblyInfo.cs
 E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.dll
 E:\xieProject\WebXClone\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.pdb
+E:\dotnetProject\WebX\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\WebX.Utility.deps.json
+E:\dotnetProject\WebX\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\WebX.Utility.dll
+E:\dotnetProject\WebX\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\WebX.Utility.pdb
+E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.csprojAssemblyReference.cache
+E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.csproj.CoreCompileInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.AssemblyInfoInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.AssemblyInfo.cs
+E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.dll
+E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.pdb

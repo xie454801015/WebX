@@ -12,3 +12,17 @@ E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.dll
 E:\xieProject\WebXClone\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.pdb
 E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
 E:\xieProject\WebXClone\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\dotnetProject\WebX\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.DAL.deps.json
+E:\dotnetProject\WebX\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.DAL.dll
+E:\dotnetProject\WebX\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.DAL.pdb
+E:\dotnetProject\WebX\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.COMMON.dll
+E:\dotnetProject\WebX\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\dotnetProject\WebX\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.COMMON.pdb
+E:\dotnetProject\WebX\WebX\WebX.DBL\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\dotnetProject\WebX\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.csprojAssemblyReference.cache
+E:\dotnetProject\WebX\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.csproj.CoreCompileInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.AssemblyInfoInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.AssemblyInfo.cs
+E:\dotnetProject\WebX\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.csproj.CopyComplete
+E:\dotnetProject\WebX\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.dll
+E:\dotnetProject\WebX\WebX\WebX.DBL\obj\Debug\netcoreapp2.1\WebX.DAL.pdb

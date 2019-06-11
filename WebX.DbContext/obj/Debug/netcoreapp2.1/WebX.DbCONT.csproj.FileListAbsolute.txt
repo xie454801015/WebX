@@ -1,0 +1,11 @@
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbCONT.deps.json
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbCONT.dll
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.csproj.CoreCompileInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.AssemblyInfoInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.AssemblyInfo.cs
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbCONT.runtimeconfig.json
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbCONT.runtimeconfig.dev.json
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.csprojAssemblyReference.cache
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbCONT.pdb
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.dll
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.pdb

@@ -7,3 +7,12 @@ E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.Assem
 E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.AssemblyInfo.cs
 E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.dll
 E:\xieProject\WebXClone\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\dotnetProject\WebX\WebX\WebX.MODEL\bin\Debug\netcoreapp2.1\WebX.MODEL.deps.json
+E:\dotnetProject\WebX\WebX\WebX.MODEL\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\dotnetProject\WebX\WebX\WebX.MODEL\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\dotnetProject\WebX\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.csprojAssemblyReference.cache
+E:\dotnetProject\WebX\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.csproj.CoreCompileInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.AssemblyInfoInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.AssemblyInfo.cs
+E:\dotnetProject\WebX\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\dotnetProject\WebX\WebX\WebX.MODEL\obj\Debug\netcoreapp2.1\WebX.MODEL.pdb

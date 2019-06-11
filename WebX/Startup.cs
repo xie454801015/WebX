@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebX.COMMON;
+using WebX.DbCONT;
 
 namespace WebX
 {
@@ -19,8 +21,8 @@ namespace WebX
         public IConfiguration Configuration { get; }
 
         public Startup(IHostingEnvironment env)
-        {
-            //够赞
+        {   
+            //空项目要写接入appsettings.json文件
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
@@ -30,10 +32,13 @@ namespace WebX
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            //services.Configure<DBsetting>(options => Configuration.GetConnectionString("MySqlConnection"));
-            //services.Configure<DBsetting>(options => Configuration.GetConnectionString("MySqlConnection"));
-            services.AddOptions().Configure<DBsetting>(Configuration);
-            
+            var connectionString = Configuration.GetConnectionString("MySqlConnection");
+            var connectionstsda = Configuration["ConnectionString:MySqlConnection"];
+            services.AddDbContext<BaseContext>(options => options.UseMySQL(connectionString));
+
+            services.Configure<DBsetting>(Configuration.GetSection("ConnectionString"));
+            //services.AddOptions().Configure<DBsetting>(Configuration);
+
         }
 
 
