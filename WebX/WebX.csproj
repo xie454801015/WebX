@@ -31,8 +31,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Article\img\" />
-    <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>

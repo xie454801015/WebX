@@ -29,6 +29,10 @@ namespace WebX.Areas.Account.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
 
         /// <summary>
         /// 获取数据

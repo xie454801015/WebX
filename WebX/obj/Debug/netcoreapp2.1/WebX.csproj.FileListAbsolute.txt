@@ -87,7 +87,6 @@ E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.AssemblyInfo.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.TagHelpers.input.cache
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.TagHelpers.output.cache
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.RazorCoreGenerate.cache
-E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Register.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Article\Views\Articles\Form.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Article\Views\Articles\Index.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.RazorTargetAssemblyInfo.cache
@@ -102,3 +101,5 @@ E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbCONT.pdb
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbCONT.dll
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbCONT.pdb
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Index.g.cshtml.cs
+E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Register.g.cshtml.cs

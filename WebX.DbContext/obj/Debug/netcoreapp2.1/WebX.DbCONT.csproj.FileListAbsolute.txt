@@ -20,3 +20,6 @@ E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.
 E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.AssemblyInfo.cs
 E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.dll
 E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.pdb
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbCONT.csproj.CopyComplete

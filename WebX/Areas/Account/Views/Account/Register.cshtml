@@ -1,10 +1,58 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+	<meta charset="UTF-8">
+	<title>欢迎注册</title>
+	<script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+	<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+	<script src="/js/Account/register.js"></script>
+	<script src="/js/Account/accounts_base.js"></script>
+	<link rel="stylesheet" href="/css/Account/form_base.css">
 </head>
 <body>
+	<div id="re_main_wrapper">
+		<div class="main_box">
+			<form  method="POST" id="register" onsubmit="return false">
+				
+				<h2>欢迎注册</h2>
+				<div class="input_box">
+					<label for="id_username">请输入用户名:</label>
+					<input type="text" id="id_username" name="user_name" required maxlength="128">
+					<p>6~18个字符，可使用字母、数字、下划线，需以字母开头,区分大小写!</p>
 
+					<label for="id_password1">请输入密码:</label>
+					<input type="password" id="id_password1" name="password1" required maxlength="256">
+					<p>6~16个字符，区分大小写!</p>
+
+					<label for="id_password2">请再次输入密码:</label>
+					<input type="password" id="id_password2" name="password2" required maxlength="256">
+					<p>请再次输入密码!</p>
+
+					<label for="id_email">请输入电子邮箱:</label>
+					<input type="email" id="id_email" name="email" required>
+					<p>请输入您的邮箱地址!</p>
+				</div>
+				<div class="chose_box">
+					<label for="id_sex">请选择性别:</label>
+					<ul style="display: inline-block">
+						<li><input type="radio" name="sex" value="male" checked>男</li>
+						<li><input type="radio" name="sex" value="female">女</li>
+					</ul>
+				</div>
+				<div class="input_box">
+					<label for="id_verify_code">请输入验证码:</label>
+					<input type="text" name="verify_code" id="id_verify_code" style="width: 150px;">
+					<img class="code" id="verify_code" src="" alt="CheckCode">
+					<img class="refresh" id='refresh_code' src="/img/Account/refresh_code.png" alt="refresh_code">
+					<p>请根据右图输入验证码!</p>
+				</div>
+				<div class="button_box">
+					<button id="sub_button" class="button1" type="button">提交</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

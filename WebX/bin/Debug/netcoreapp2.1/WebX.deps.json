@@ -757,7 +757,8 @@
       },
       "WebX.DbCONT/1.0.0": {
         "dependencies": {
-          "MySql.Data.EntityFrameworkCore": "8.0.16"
+          "MySql.Data.EntityFrameworkCore": "8.0.16",
+          "WebX.MODEL": "1.0.0"
         },
         "runtime": {
           "WebX.DbCONT.dll": {}
