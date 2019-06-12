@@ -1897,23 +1897,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mdzz\\.nuget\\packages\\": {},
+    "C:\\Users\\yudj\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\dotnetProject\\WebX\\WebX\\WebX.DLL\\WebX.BLL.csproj",
+      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj",
       "projectName": "WebX.BLL",
-      "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.DLL\\WebX.BLL.csproj",
-      "packagesPath": "C:\\Users\\mdzz\\.nuget\\packages\\",
-      "outputPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.DLL\\obj\\",
+      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj",
+      "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
+      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mdzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yudj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1926,17 +1926,17 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\dotnetProject\\WebX\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
-              "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
             },
-            "E:\\dotnetProject\\WebX\\WebX\\WebX.DBL\\WebX.DAL.csproj": {
-              "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.DBL\\WebX.DAL.csproj"
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj"
             },
-            "E:\\dotnetProject\\WebX\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
-              "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
             },
-            "E:\\dotnetProject\\WebX\\WebX\\WebX.Utility\\WebX.Utility.csproj": {
-              "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.Utility\\WebX.Utility.csproj"
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj"
             }
           }
         }

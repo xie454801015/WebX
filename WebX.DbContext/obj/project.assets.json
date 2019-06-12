@@ -946,6 +946,16 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "WebX.MODEL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebX.MODEL.dll": {}
+        }
       }
     }
   },
@@ -3576,33 +3586,39 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "WebX.MODEL/1.0.0": {
+      "type": "project",
+      "path": "../WebX.MODEL/WebX.MODEL.csproj",
+      "msbuildProject": "../WebX.MODEL/WebX.MODEL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "MySql.Data.EntityFrameworkCore >= 8.0.16"
+      "MySql.Data.EntityFrameworkCore >= 8.0.16",
+      "WebX.MODEL >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mdzz\\.nuget\\packages\\": {},
+    "C:\\Users\\yudj\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\dotnetProject\\WebX\\WebX\\WebX.DbContext\\WebX.DbCONT.csproj",
+      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\WebX.DbCONT.csproj",
       "projectName": "WebX.DbCONT",
-      "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.DbContext\\WebX.DbCONT.csproj",
-      "packagesPath": "C:\\Users\\mdzz\\.nuget\\packages\\",
-      "outputPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.DbContext\\obj\\",
+      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\WebX.DbCONT.csproj",
+      "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
+      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mdzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yudj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3614,7 +3630,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

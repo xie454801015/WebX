@@ -32,9 +32,10 @@ namespace WebX
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            var connectionString = Configuration.GetConnectionString("MySqlConnection");
-            var connectionstsda = Configuration["ConnectionString:MySqlConnection"];
-            services.AddDbContext<BaseContext>(options => options.UseMySQL(connectionString));
+
+            //var connectionString = Configuration.GetConnectionString("MySqlConnection");
+            var connectionString = Configuration["ConnectionString:MySqlConnection"];
+            services.AddDbContext<MySqlContext>(options => options.UseMySQL(connectionString));
 
             services.Configure<DBsetting>(Configuration.GetSection("ConnectionString"));
             //services.AddOptions().Configure<DBsetting>(Configuration);

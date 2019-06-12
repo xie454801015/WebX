@@ -9,7 +9,15 @@ namespace WebX.MODEL
 
     [Table("accounts")]
     public class AccountMD
-    {   
+    {
+        public enum Gender
+        {   
+            female=0,
+            male=1,
+            secret=2,
+        };
+
+
         public AccountMD()
         {
         }
@@ -17,7 +25,7 @@ namespace WebX.MODEL
         /// 流水号
         /// </summary>
         [Column("line_no")]
-        public string LineNO { get; set; }
+        public int LineNO { get; set; }
 
         /// <summary>
         /// 用户ID
@@ -54,10 +62,10 @@ namespace WebX.MODEL
         public string UserEmail { get; set; }
 
         /// <summary>
-        /// 用户性别 0为女性，1为男性
+        /// 用户性别 0为女性，1为男性,2被保密
         /// </summary>
         [Column("user_sex")]
-        public string UserSex { get; set; }
+        public Gender? UserSex { get; set; }
 
         /// <summary>
         /// 用户类型

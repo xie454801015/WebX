@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mdzz\\.nuget\\packages\\": {},
+    "C:\\Users\\yudj\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\dotnetProject\\WebX\\WebX\\WebX.Utility\\WebX.Utility.csproj",
+      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj",
       "projectName": "WebX.Utility",
-      "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.Utility\\WebX.Utility.csproj",
-      "packagesPath": "C:\\Users\\mdzz\\.nuget\\packages\\",
-      "outputPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.Utility\\obj\\",
+      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj",
+      "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
+      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mdzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yudj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
