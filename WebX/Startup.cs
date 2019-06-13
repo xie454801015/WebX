@@ -32,7 +32,20 @@ namespace WebX
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            // 添加一个内存缓存
+            services.AddDistributedRedisCache(options =>
+            {
+                options.Configuration = "127.0.0.1"; //多个redis服务器：options.Configuration="地址1:端口,地址2:端口";；
+                options.InstanceName = "sampleInstance";// 实体名字；
+            });
+            //services.AddDistributedMemoryCache(); 使用内存缓存
+            services.AddSession(options=>
+            {
 
+                options.Cookie.Name = ".AdventureWorks.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(60); // 设置60秒钟session过期
+                options.Cookie.HttpOnly = true; // 设置在浏览器中不能通过js获取cookie的值
+            });
             //var connectionString = Configuration.GetConnectionString("MySqlConnection");
             var connectionString = Configuration["ConnectionString:MySqlConnection"];
             services.AddDbContext<MySqlContext>(options => options.UseMySQL(connectionString));
@@ -58,14 +71,15 @@ namespace WebX
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseCookiePolicy();
-
             app.UseStaticFiles();// 静态文件支持
+            app.UseCookiePolicy();
+            app.UseSession();
+            
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                        name: "Myarea",
+                        name: "Myareas",
                         template: "{area:exists}/{controller=Articles}/{action=Index}/{id?}"
                     );
 

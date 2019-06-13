@@ -1860,23 +1860,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mdzz\\.nuget\\packages\\": {},
+    "C:\\Users\\yudj\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\dotnetProject\\WebX\\WebX\\WebX.DBL\\WebX.DAL.csproj",
+      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj",
       "projectName": "WebX.DAL",
-      "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.DBL\\WebX.DAL.csproj",
-      "packagesPath": "C:\\Users\\mdzz\\.nuget\\packages\\",
-      "outputPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.DBL\\obj\\",
+      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj",
+      "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
+      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mdzz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yudj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1889,11 +1889,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\dotnetProject\\WebX\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
-              "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
             },
-            "E:\\dotnetProject\\WebX\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
-              "projectPath": "E:\\dotnetProject\\WebX\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
             }
           }
         }

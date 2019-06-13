@@ -7,7 +7,12 @@ using System.Threading.Tasks;
 
 
 namespace WebX.Utility
-{
+{   
+
+    /// <summary>
+    /// EF下分页
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class PaginatedList<T> : List<T>
     {
         public int PageIndex { get; private set; }

@@ -16,7 +16,7 @@ namespace WebX.Areas.Account.Controllers
     [Area("Account")]
     public class AccountController : BaseController
     {
-        
+
         private readonly MySqlContext _context;
         public AccountController(MySqlContext context)
         {
@@ -34,6 +34,18 @@ namespace WebX.Areas.Account.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult GetVerifyCode()
+        {
+            string code = null;
+            Byte[] img= VerifyCode.CreatePic(out code).ToArray();
+            
+            return File(img,@"image/jpeg");
+        }
         /// <summary>
         /// 获取数据
         /// </summary>
@@ -64,10 +76,10 @@ namespace WebX.Areas.Account.Controllers
             switch (sortOrder)
             {
                 case "LineNO":
-                    accounts = accounts.OrderByDescending(user =>user.LineNO);
+                    accounts = accounts.OrderByDescending(user =>user.LineNo);
                     break;
                 case "UserID":
-                    accounts = accounts.OrderByDescending(user => user.UserID);
+                    accounts = accounts.OrderByDescending(user => user.UserId);
                     break;
                 default:
                     accounts = accounts.OrderByDescending(user => user.RegisterTime);
@@ -107,7 +119,7 @@ namespace WebX.Areas.Account.Controllers
         //[ValidateAntiForgeryToken] // 防止csrf攻击
         public IActionResult Update(int LineNO,AccountMD account)
         {
-            if (LineNO !=account.LineNO)
+            if (LineNO !=account.LineNo)
             {
                 return NotFound();
             }
@@ -130,11 +142,13 @@ namespace WebX.Areas.Account.Controllers
             return null;
         }
 
+        [HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken] // 防止csrf攻击
         public IActionResult Delete(int LineNO)
         {
             try
             {
-                AccountMD accountToDelete = new AccountMD() { LineNO = LineNO};
+                AccountMD accountToDelete = new AccountMD() { LineNo = LineNO};
                 _context.Entry(accountToDelete).State = EntityState.Deleted;
                 _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

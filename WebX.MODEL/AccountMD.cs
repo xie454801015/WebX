@@ -25,13 +25,13 @@ namespace WebX.MODEL
         /// 流水号
         /// </summary>
         [Column("line_no")]
-        public int LineNO { get; set; }
+        public int LineNo { get; set; }
 
         /// <summary>
         /// 用户ID
         /// </summary>
         [Column("user_id")]
-        public string UserID { get; set; }
+        public string UserId { get; set; }
 
         /// <summary>
         /// 用户账号

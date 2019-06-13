@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <link rel="stylesheet" href="/css/Account/form_base.css" type="text/css">
+    <title>欢迎登入</title>
+</head>
+<body>
+    <div id="re_main_wrapper">
+        <div class="main_box">
+            <h1>请输入账号密码</h1>
+            <form id="login" action="{% url 'accounts:login' %}" method="POST" onsubmit="return false">
+ 
+                <div class="input_box">
+                    <label for="id_username">用户名：</label>
+                    <input type="text" id="id_username"  name="user_name" required>
+                    <label for="id_password">密码：</label>
+                    <input type="password" id="id_password"  name="password" required>
+                    <label for="id_verify_code">请输入验证码:</label>
+                    <input type="text" name="verify_code" id="id_verify_code" style="width: 150px;">
+                    <img class="code" id="verify_code" src="/Account/Account/GetVerifyCode" alt="CheckCode">
+                    <img class="refresh" id='refresh_code' src="/img/Account/refresh_code.png" alt="refresh_code">
+                    <p id="error_message">请输入您的用户名和密码，并输入验证码。</p>
+                </div>
+                <div class="button_box">
+                    <button id="sub_button" class="button1" type="button">登录</button>
+                    <button id="jump_button" class="button1" type="button">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

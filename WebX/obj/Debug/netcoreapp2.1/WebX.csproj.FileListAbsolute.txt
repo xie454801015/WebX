@@ -37,7 +37,6 @@ E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.csprojAssemblyRef
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.csproj.CoreCompileInputs.cache
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.RazorAssemblyInfo.cache
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.RazorAssemblyInfo.cs
-E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.AssemblyInfoInputs.cache
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.AssemblyInfo.cs
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.TagHelpers.input.cache
@@ -59,7 +58,6 @@ E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.BLL.pdb
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.Utility.pdb
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Article\Views\Articles\Form.g.cshtml.cs
-E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Register.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.deps.json
 E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.runtimeconfig.json
 E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.runtimeconfig.dev.json
@@ -103,3 +101,5 @@ E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbCONT.pdb
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Index.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Register.g.cshtml.cs
+E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Index.g.cshtml.cs
+E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Register.g.cshtml.cs
