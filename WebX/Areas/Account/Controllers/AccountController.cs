@@ -24,28 +24,49 @@ namespace WebX.Areas.Account.Controllers
             _context = context;
         }
 
-
+        #region 获取视图
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
+        [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
+        #endregion
 
+        #region 功能类接口
+        /// <summary>
+        /// 获取验证码图片
+        /// </summary>
+        /// <returns></returns>
         public IActionResult GetVerifyCode()
         {
             string code = null;
-            Byte[] img= VerifyCode.CreatePic(out code).ToArray();
-            
-            return File(img,@"image/jpeg");
+            Byte[] img = VerifyCode.CreatePic(out code).ToArray();
+
+            return File(img, @"image/jpeg");
+        }
+
+        public IActionResult SignUp(AccountMD account)
+        {
+            var s = account;
+            return null;
+        }
+
+        public IActionResult Check()
+        {
+            int count = 0;
+            return Json(count);
         }
 
         public IActionResult SetSession()
@@ -63,6 +84,8 @@ namespace WebX.Areas.Account.Controllers
 
             return null;
         }
+
+        #endregion
         /// <summary>
         /// 获取数据
         /// </summary>

@@ -65,7 +65,7 @@ $(document).ready(function(){
         for (var i = 0; i < form_array.length; i++) {
             form_json[form_array[i].name] = form_array[i].value
         }
-        $.post('',form_json,function (data,status) {
+        $.post("/Account/Account/SignUp",form_json,function (data,status) {
             if (status =='success'){
                 if (data.jump_url){
                     location.href=data.jump_url
@@ -90,7 +90,7 @@ function username_check($elem,asy=true) {
     if ((5<u_name.length) && (u_name.length<19) && (u_name!=null)){
         if (/^[a-zA-Z]/.test(u_name)) {
             if (/^[a-zA-Z][a-zA-Z0-9_]{5,17}$/.test(u_name)) {
-                input_checkout($elem, 'check/', '用户名被占用！请重新输入！', '恭喜，该用户名可用！',asy);
+                input_checkout($elem, "/Account/Account/Check", '用户名被占用！请重新输入！', '恭喜，该用户名可用！',asy);
             }
             else{ change_css($elem,'用户名必须以字母、数字或下划线组成!','#bc1717');}
         }
@@ -104,7 +104,7 @@ function email_check($elem,asy=true){
     $elem.key_pass=false;
     var u_email = $elem.val();
     if (/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/.test(u_email))
-            {input_checkout($elem,'check/','邮箱地址被占用！请重新输入！','该邮箱地址可用！',asy);}
+    { input_checkout($elem,"/Account/Account/Check",'邮箱地址被占用！请重新输入！','该邮箱地址可用！',asy);}
     else{ change_css($elem,'请输入正确的邮箱格式!','#bc1717');}
 }
 
@@ -139,7 +139,7 @@ function password2_check($elem1,$elem2) {
 // 验证码校验
 function verify_check($elem){
     if($elem.val())
-        {input_checkout($elem,'check/','验证码错误！请重新输入！','验证码输入正确！');}
+        {input_checkout($elem,'/Account/Account/Check','验证码错误！请重新输入！','验证码输入正确！');}
     else{
         change_css($elem,'请输入验证码!',"#bc1717")
     }
@@ -153,7 +153,7 @@ function input_checkout($elem,url1,text1,text2,async){
     if (i_value){
         var i_data = {k1:i_name,k2:i_value};
         $.ajax({
-             type: "get",
+             type: "Post",
              async: async,
              url: url1,
              data: i_data,

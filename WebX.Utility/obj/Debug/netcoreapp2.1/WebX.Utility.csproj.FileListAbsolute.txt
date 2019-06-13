@@ -16,3 +16,6 @@ E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.Ass
 E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.AssemblyInfo.cs
 E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.dll
 E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.pdb
+E:\dotnetProject\WebX\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\dotnetProject\WebX\WebX\WebX.Utility\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\dotnetProject\WebX\WebX\WebX.Utility\obj\Debug\netcoreapp2.1\WebX.Utility.csproj.CopyComplete

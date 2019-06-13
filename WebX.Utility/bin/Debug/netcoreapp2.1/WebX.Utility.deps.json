@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.1": {
       "WebX.Utility/1.0.0": {
         "dependencies": {
-          "System.Drawing.Common": "4.5.1"
+          "System.Drawing.Common": "4.5.1",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1.0"
         },
         "runtime": {
           "WebX.Utility.dll": {}
@@ -54,6 +55,14 @@
             "fileVersion": "4.6.26919.2"
           }
         }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.1.1.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
+          }
+        }
       }
     }
   },
@@ -76,6 +85,11 @@
       "sha512": "sha512-GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
       "path": "system.drawing.common/4.5.1",
       "hashPath": "system.drawing.common.4.5.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.1.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
