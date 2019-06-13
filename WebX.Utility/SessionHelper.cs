@@ -8,6 +8,8 @@ namespace WebX.Utility
     public class SessionHelper
     {
         private static string CacheModuleName { get; } = "Session";
-    //    private static string _sessionId { get => HttpContext.Request.Cookies[SessionCookieName].Vaule; }
-    //}
+
+        //    private static string _sessionId { get => HttpContext.Request.Cookies[SessionCookieName].Vaule; }
+        //}
+    }
 }

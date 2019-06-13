@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -45,6 +46,22 @@ namespace WebX.Areas.Account.Controllers
             Byte[] img= VerifyCode.CreatePic(out code).ToArray();
             
             return File(img,@"image/jpeg");
+        }
+
+        public IActionResult SetSession()
+        {
+            HttpContext.Session.Set("apptest", Encoding.UTF8.GetBytes("apptestvalue"));
+            return null;
+        }
+        public IActionResult GetSession()
+        {
+            byte[] temp;
+            if (HttpContext.Session.TryGetValue("apptest", out temp))
+            {
+                ViewData["Redis"] = Encoding.UTF8.GetString(temp);
+            }
+
+            return null;
         }
         /// <summary>
         /// 获取数据
