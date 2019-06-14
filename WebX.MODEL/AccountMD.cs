@@ -20,12 +20,14 @@ namespace WebX.MODEL
 
         public AccountMD()
         {
+            UserType = 1;
         }
         /// <summary>
         /// 流水号
         /// </summary>
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("line_no")]
-        public int LineNo { get; set; }
+        public int LineNo { get;}
 
         /// <summary>
         /// 用户ID
@@ -37,7 +39,7 @@ namespace WebX.MODEL
         /// 用户账号
         /// </summary>
         [Column("user_name")]
-        [Required, MaxLength(256)]
+        [Required, MaxLength(255)]
         public string UserName { get; set; }
 
         /// <summary>

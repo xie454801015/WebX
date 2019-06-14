@@ -27,7 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebX.COMMON\WebX.COMMON.csproj" />
-    <ProjectReference Include="..\WebX.DbContext\WebX.DbCONT.csproj" />
+    <ProjectReference Include="..\WebX.DbContext\WebX.DbAccess.csproj" />
     <ProjectReference Include="..\WebX.DBL\WebX.DAL.csproj" />
     <ProjectReference Include="..\WebX.DLL\WebX.BLL.csproj" />
     <ProjectReference Include="..\WebX.MODEL\WebX.MODEL.csproj" />

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebX.COMMON\WebX.COMMON.csproj" />
+    <ProjectReference Include="..\WebX.DbContext\WebX.DbAccess.csproj" />
     <ProjectReference Include="..\WebX.DBL\WebX.DAL.csproj" />
     <ProjectReference Include="..\WebX.MODEL\WebX.MODEL.csproj" />
     <ProjectReference Include="..\WebX.Utility\WebX.Utility.csproj" />

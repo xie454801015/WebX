@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebX.BLL", "WebX.DLL\WebX.B
 		{D70545C2-A759-40E8-AEFB-6815632F1CCA} = {D70545C2-A759-40E8-AEFB-6815632F1CCA}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebX.DbCONT", "WebX.DbContext\WebX.DbCONT.csproj", "{EAC3745C-CE3D-49F6-B90B-63CA7B033060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebX.DbAccess", "WebX.DbContext\WebX.DbAccess.csproj", "{EAC3745C-CE3D-49F6-B90B-63CA7B033060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

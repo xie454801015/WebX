@@ -34,3 +34,5 @@ E:\dotnetProject\WebX\WebX\WebX.DLL\obj\Debug\netcoreapp2.1\WebX.BLL.AssemblyInf
 E:\dotnetProject\WebX\WebX\WebX.DLL\obj\Debug\netcoreapp2.1\WebX.BLL.csproj.CopyComplete
 E:\dotnetProject\WebX\WebX\WebX.DLL\obj\Debug\netcoreapp2.1\WebX.BLL.dll
 E:\dotnetProject\WebX\WebX\WebX.DLL\obj\Debug\netcoreapp2.1\WebX.BLL.pdb
+E:\xieProject\WebXClone\WebX\WebX.DLL\bin\Debug\netcoreapp2.1\WebX.DbAccess.dll
+E:\xieProject\WebXClone\WebX\WebX.DLL\bin\Debug\netcoreapp2.1\WebX.DbAccess.pdb

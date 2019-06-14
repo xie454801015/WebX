@@ -33,7 +33,7 @@
           "WebX.BLL": "1.0.0",
           "WebX.COMMON": "1.0.0",
           "WebX.DAL": "1.0.0",
-          "WebX.DbCONT": "1.0.0",
+          "WebX.DbAccess": "1.0.0",
           "WebX.MODEL": "1.0.0",
           "WebX.Utility": "1.0.0"
         },
@@ -927,6 +927,7 @@
           "MySql.Data": "8.0.16",
           "WebX.COMMON": "1.0.0",
           "WebX.DAL": "1.0.0",
+          "WebX.DbAccess": "1.0.0",
           "WebX.MODEL": "1.0.0",
           "WebX.Utility": "1.0.0"
         },
@@ -962,16 +963,16 @@
           "WebX.DAL.dll": {}
         }
       },
-      "WebX.DbCONT/1.0.0": {
+      "WebX.DbAccess/1.0.0": {
         "dependencies": {
           "MySql.Data.EntityFrameworkCore": "8.0.16",
           "WebX.MODEL": "1.0.0"
         },
         "runtime": {
-          "WebX.DbCONT.dll": {}
+          "WebX.DbAccess.dll": {}
         },
         "compile": {
-          "WebX.DbCONT.dll": {}
+          "WebX.DbAccess.dll": {}
         }
       },
       "WebX.MODEL/1.0.0": {
@@ -4243,7 +4244,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "WebX.DbCONT/1.0.0": {
+    "WebX.DbAccess/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

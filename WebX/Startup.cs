@@ -8,8 +8,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebX.BLL;
 using WebX.COMMON;
-using WebX.DbCONT;
+using WebX.DbAccess;
+using WebX.DbAccess.Interface;
 
 namespace WebX
 {
@@ -32,6 +34,7 @@ namespace WebX
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
             // 添加一个内存缓存
             services.AddDistributedRedisCache(options =>
             {
@@ -46,13 +49,18 @@ namespace WebX
                 options.IdleTimeout = TimeSpan.FromSeconds(60); // 设置60秒钟session过期
                 options.Cookie.HttpOnly = true; // 设置在浏览器中不能通过js获取cookie的值
             });
+
+            #region 数据库依赖注入（连接）
             //var connectionString = Configuration.GetConnectionString("MySqlConnection");
             var connectionString = Configuration["ConnectionString:MySqlConnection"];
             services.AddDbContext<MySqlContext>(options => options.UseMySQL(connectionString));
+            //注册数据库操作类
+            services.AddScoped<IAccount,AccountBLL>();
 
             services.Configure<DBsetting>(Configuration.GetSection("ConnectionString"));
             //services.AddOptions().Configure<DBsetting>(Configuration);
-
+            #endregion
+            
         }
 
 
