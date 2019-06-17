@@ -74,9 +74,7 @@ namespace WebX.Areas.Account.Controllers
         {
             var sq = Request.Form;
             
-            string key = Request.Form["key"];
-            string value = Request.Form["value"];
-            string sql = "select *from accounts where " + key + " = " + value;
+         
             int count = 0;
             return Json(count);
         }

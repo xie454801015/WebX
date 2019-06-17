@@ -12,3 +12,17 @@ E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAcces
 E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.pdb
 E:\xieProject\WebXClone\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.runtimeconfig.json
 E:\xieProject\WebXClone\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.runtimeconfig.dev.json
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.deps.json
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.runtimeconfig.json
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.runtimeconfig.dev.json
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.dll
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.pdb
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.MODEL.dll
+E:\dotnetProject\WebX\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.MODEL.pdb
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.csprojAssemblyReference.cache
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.csproj.CoreCompileInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.AssemblyInfoInputs.cache
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.AssemblyInfo.cs
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.csproj.CopyComplete
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.dll
+E:\dotnetProject\WebX\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.pdb

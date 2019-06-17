@@ -44,6 +44,8 @@ namespace WebX.Utility
             
             Expression left = Expression.Property(param, property);
             Expression right = null;
+
+            //值的类型转换
             if (property.PropertyType == typeof(int))
             {
                 right = Expression.Constant(int.Parse(filterObj.Value));
@@ -74,6 +76,7 @@ namespace WebX.Utility
             }
 
             Expression filter = Expression.Equal(left, right);
+
             //根据字段拓展比较
             switch (filterObj.Contract)
             {
@@ -130,10 +133,11 @@ namespace WebX.Utility
     }
 
     public static class DynamicExtention
-    {
+    {   
+        //构建查询方法，返回queryable对象
         public static IQueryable<T> Filter<T>(this IQueryable<T> query, FilterObj[] filters)
         {
-            var param = DynamicLinq.CreateLambdaParam<T>("c");
+            var param = DynamicLinq.CreateLambdaParam<T>("param");
             Expression body = Expression.Constant(true); //初始默认一个true
             foreach (var filter in filters)
             {
