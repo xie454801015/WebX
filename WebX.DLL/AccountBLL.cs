@@ -6,6 +6,7 @@ using WebX.DbAccess;
 using WebX.DbAccess.Interface;
 using WebX.MODEL;
 using System.Data.SqlClient;
+using System.Reflection;
 
 namespace WebX.BLL
 {
@@ -20,7 +21,7 @@ namespace WebX.BLL
 
         public  bool CreateAccount(AccountMD account)
         {
-           
+            _context.AccountMD.
             _context.AccountMD.Add(account);
             
             return _context.SaveChanges() > 0;
@@ -28,8 +29,8 @@ namespace WebX.BLL
 
         public IEnumerable<AccountMD> GetAccounts()
         {
-            
 
+            //_context.AccountMD;
             return _context.AccountMD.ToList();
         }
 

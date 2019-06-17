@@ -27,7 +27,7 @@ namespace WebX.MODEL
         /// </summary>
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("line_no")]
-        public int LineNo { get;}
+        public int LineNo { get; set; }
 
         /// <summary>
         /// 用户ID

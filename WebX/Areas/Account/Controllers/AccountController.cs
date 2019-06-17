@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using WebX.BLL;
-using WebX.COMMON;
-using WebX.DbAccess;
 using WebX.DbAccess.Interface;
 using WebX.MidWares;
 using WebX.MODEL;
@@ -65,15 +57,11 @@ namespace WebX.Areas.Account.Controllers
             if (ModelState.IsValid)
             {
                 //初始化用户昵称
-                if (account.UserNickname.IsNotNullOrEmpty())
+                if (!account.UserNickname.IsNotNullOrEmpty())
                 {
                     account.UserNickname = "用户_" + account.UserName;
                 }
-                if (account.RegisterTime == null)
-                {
-                    account.RegisterTime = DateTime.Now;
-                }
-
+                account.RegisterTime = DateTime.Now;
                 account.UserId = AccountHelper.CreateUserId();
 
                 _accountBLL.CreateAccount(account);
@@ -84,6 +72,11 @@ namespace WebX.Areas.Account.Controllers
 
         public IActionResult Check()
         {
+            var sq = Request.Form;
+            
+            string key = Request.Form["key"];
+            string value = Request.Form["value"];
+            string sql = "select *from accounts where " + key + " = " + value;
             int count = 0;
             return Json(count);
         }

@@ -147,11 +147,11 @@ function verify_check($elem){
 
 // 校验后端异步交互传递，元素对象，url，默认为本级，存在提示文本，不存在提示文本，async值默认为true;
 function input_checkout($elem,url1,text1,text2,async){
-    var i_name= $elem.prop('name');
-    var i_value = $elem.val();
+    let i_key= $elem.prop('name');
+    let i_value = $elem.val();
     var $p_message = latest_elem($elem,'P');
     if (i_value){
-        var i_data = {k1:i_name,k2:i_value};
+        var i_data = {key:i_key,value:i_value};
         $.ajax({
              type: "Post",
              async: async,
