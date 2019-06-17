@@ -7,7 +7,6 @@ using WebX.DbAccess.Interface;
 using WebX.MODEL;
 using System.Data.SqlClient;
 using System.Reflection;
-using WebX.Utility;
 
 namespace WebX.BLL
 {
@@ -22,14 +21,7 @@ namespace WebX.BLL
 
         public  bool CreateAccount(AccountMD account)
         {
-           
-
-            FilterObj[] filterlist = {
-                new FilterObj{Key="UserId", Value="1",Contract="="},
-                new FilterObj{Key="UserName", Value="1s",Contract="="}
-            };
-            var c = _context.AccountMD.Filter(filterlist);
-
+            _context.AccountMD.
             _context.AccountMD.Add(account);
             
             return _context.SaveChanges() > 0;

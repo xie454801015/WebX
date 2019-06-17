@@ -94,6 +94,8 @@ E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.csproj.CopyComplete
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.dll
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\WebX.pdb
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbCONT.dll
+E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbCONT.pdb
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Index.g.cshtml.cs
 E:\dotnetProject\WebX\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Views\Account\Register.g.cshtml.cs
@@ -102,5 +104,3 @@ E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\Razor\Areas\Account\Vi
 E:\xieProject\WebXClone\WebX\WebX\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbAccess.dll
 E:\xieProject\WebXClone\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbAccess.pdb
-E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbAccess.dll
-E:\dotnetProject\WebX\WebX\WebX\bin\Debug\netcoreapp2.1\WebX.DbAccess.pdb
