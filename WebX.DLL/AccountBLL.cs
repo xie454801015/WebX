@@ -5,6 +5,7 @@ using System.Text;
 using WebX.DbAccess;
 using WebX.DbAccess.Interface;
 using WebX.MODEL;
+using WebX.Utility;
 using System.Data.SqlClient;
 using System.Reflection;
 
@@ -21,7 +22,15 @@ namespace WebX.BLL
 
         public  bool CreateAccount(AccountMD account)
         {
-            _context.AccountMD.
+            // 调用过滤器示例
+            FilterObj[] filterList = 
+            {
+                new FilterObj{Key="UserId",Value="1", Contract="="},
+                new FilterObj{ Key="UserName",Value="sdafaweq",Contract="="}
+            };
+            _context.AccountMD.Filter(filterList);
+
+
             _context.AccountMD.Add(account);
             
             return _context.SaveChanges() > 0;
