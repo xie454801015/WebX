@@ -1,0 +1,3 @@
+E:\xieProject\WebXClone\WebX\WebX.Api\obj\Debug\netcoreapp2.1\WebX.Api.csproj.CoreCompileInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.Api\obj\Debug\netcoreapp2.1\WebX.Api.AssemblyInfoInputs.cache
+E:\xieProject\WebXClone\WebX\WebX.Api\obj\Debug\netcoreapp2.1\WebX.Api.AssemblyInfo.cs
