@@ -11,6 +11,7 @@ namespace WebX.Areas.Account.Controllers
     [Area("Account")]
     public class AccountController : BaseController
     {
+        
 
         private  IAccount _accountBLL;
         public AccountController(IAccount accountBLL)
@@ -39,15 +40,16 @@ namespace WebX.Areas.Account.Controllers
         #endregion
 
         #region 功能类接口
+
         /// <summary>
         /// 获取验证码图片
         /// </summary>
         /// <returns></returns>
         public IActionResult GetVerifyCode()
         {
-            string code = null;
+            string code = "";
             Byte[] img = VerifyCode.CreatePic(out code).ToArray();
-
+            this.HttpContext.Session.Set("verifycode", System.Text.Encoding.Default.GetBytes(code));
             return File(img, @"image/jpeg");
         }
 
@@ -72,30 +74,46 @@ namespace WebX.Areas.Account.Controllers
 
         public IActionResult Check()
         {
-            var sq = Request.Form;
-            
+            int count = 0;
             string key = Request.Form["key"];
             string value = Request.Form["value"];
-            string sql = "select *from accounts where " + key + " = " + value;
-            int count = 0;
+            if (key == "VerifyCode")
+            {
+                byte[] verify_code;
+                this.HttpContext.Session.TryGetValue("verifycode", out verify_code);
+                if (!(value == System.Text.Encoding.Default.GetString(verify_code)))
+                {
+                    count = 1;
+                }
+            }
+            else
+            {
+                // 调用过滤器示例
+                FilterObj[] filterList =
+                {
+                new FilterObj{Key=key,Value=value, Contract="="}
+                };
+                var list = _accountBLL.GetAccountsByFilter(filterList);
+                count = list.Count;
+            }
             return Json(count);
         }
 
-        public IActionResult SetSession()
-        {
-            HttpContext.Session.Set("apptest", Encoding.UTF8.GetBytes("apptestvalue"));
-            return null;
-        }
-        public IActionResult GetSession()
-        {
-            byte[] temp;
-            if (HttpContext.Session.TryGetValue("apptest", out temp))
-            {
-                ViewData["Redis"] = Encoding.UTF8.GetString(temp);
-            }
+        //public IActionResult SetSession()
+        //{
+        //    HttpContext.Session.Set("apptest", Encoding.UTF8.GetBytes("apptestvalue"));
+        //    return null;
+        //}
+        //public IActionResult GetSession()
+        //{
+        //    byte[] temp;
+        //    if (HttpContext.Session.TryGetValue("apptest", out temp))
+        //    {
+        //        ViewData["Redis"] = Encoding.UTF8.GetString(temp);
+        //    }
 
-            return null;
-        }
+        //    return null;
+        //}
 
         #endregion
 

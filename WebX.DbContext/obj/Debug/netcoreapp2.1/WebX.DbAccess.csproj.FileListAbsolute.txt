@@ -12,3 +12,5 @@ E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAcces
 E:\xieProject\WebXClone\WebX\WebX.DbContext\obj\Debug\netcoreapp2.1\WebX.DbAccess.pdb
 E:\xieProject\WebXClone\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.runtimeconfig.json
 E:\xieProject\WebXClone\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.DbAccess.runtimeconfig.dev.json
+E:\xieProject\WebXClone\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.Utility.dll
+E:\xieProject\WebXClone\WebX\WebX.DbContext\bin\Debug\netcoreapp2.1\WebX.Utility.pdb

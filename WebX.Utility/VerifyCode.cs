@@ -8,7 +8,7 @@ using System.Text;
 namespace WebX.Utility
 {
     public class VerifyCode
-    {   
+    {
         /// <summary>
         /// 生成验证码string
         /// </summary>
@@ -62,7 +62,7 @@ namespace WebX.Utility
         /// <param name="code">输出验证码值</param>
         /// <param name="codelen">验证码长度，默认为4</param>
         /// <returns></returns>
-        public static MemoryStream CreatePic(out string code, int codelen = 4)
+        public static MemoryStream CreatePic(out string code ,int codelen = 4)
         {
             if (codelen > 10)
                 codelen = 10;

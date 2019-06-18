@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebX.MODEL\WebX.MODEL.csproj" />
+    <ProjectReference Include="..\WebX.Utility\WebX.Utility.csproj" />
   </ItemGroup>
 
 </Project>

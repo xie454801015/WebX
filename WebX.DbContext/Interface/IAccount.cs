@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using WebX.MODEL;
+using WebX.Utility;
 
 namespace WebX.DbAccess.Interface
 {
@@ -24,6 +25,8 @@ namespace WebX.DbAccess.Interface
 
         //根据id删除记录
         bool DeleteAccountByLineNo(int LineNo);
+
+        List<AccountMD> GetAccountsByFilter(FilterObj[] filterlist);
 
     }
 }

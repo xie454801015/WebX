@@ -563,7 +563,8 @@
       "WebX.DbAccess/1.0.0": {
         "dependencies": {
           "MySql.Data.EntityFrameworkCore": "8.0.16",
-          "WebX.MODEL": "1.0.0"
+          "WebX.MODEL": "1.0.0",
+          "WebX.Utility": "1.0.0"
         },
         "runtime": {
           "WebX.DbAccess.dll": {}

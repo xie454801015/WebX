@@ -15,8 +15,8 @@ namespace WebX.COMMON
 
         public static string ConnString{ get { return connstring; } set {connstring=value; } }
 
-        // 用于缓存参数的HASH表
-        private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());
+        //// 用于缓存参数的HASH表
+        //private static Hashtable parmCache = Hashtable.Synchronized(new Hashtable());
 
         /// <summary>
         /// ExcuteReader查询

@@ -131,16 +131,17 @@ namespace WebX.Utility
 
     public static class DynamicExtention
     {
-        public static IQueryable<T> Filter<T>(this IQueryable<T> query, FilterObj[] filters)
+        public static List<T> Filter<T>(this IQueryable<T> query, FilterObj[] filters)
         {
             var param = DynamicLinq.CreateLambdaParam<T>("c");
             Expression body = Expression.Constant(true); //初始默认一个true
             foreach (var filter in filters)
             {
-                body = body.AndAlso(param.GenerateBody<T>(filter)); 
+                body = body.And(param.GenerateBody<T>(filter)); 
             }
             var lambda = param.GenerateTypeLambda<T>(body); //最终组成lambda
-            return query.Where(lambda);
+            var list= query.Where(lambda).ToList();
+            return list;
         }
     }
 }

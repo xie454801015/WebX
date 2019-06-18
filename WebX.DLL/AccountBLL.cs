@@ -18,18 +18,15 @@ namespace WebX.BLL
         {
             _context = context;
         }
-        
+
+        public  List<AccountMD> GetAccountsByFilter(FilterObj[] filterlist)
+        {
+            return _context.AccountMD.Filter(filterlist);
+        }
+
 
         public  bool CreateAccount(AccountMD account)
         {
-            // 调用过滤器示例
-            FilterObj[] filterList = 
-            {
-                new FilterObj{Key="UserId",Value="1", Contract="="},
-                new FilterObj{ Key="UserName",Value="sdafaweq",Contract="="}
-            };
-            _context.AccountMD.Filter(filterList);
-
 
             _context.AccountMD.Add(account);
             
