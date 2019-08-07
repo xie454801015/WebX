@@ -11882,11 +11882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.Api\\WebX.Api.csproj",
+      "projectUniqueName": "E:\\xieProject\\test1\\WebX.Api\\WebX.Api.csproj",
       "projectName": "WebX.Api",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Api\\WebX.Api.csproj",
+      "projectPath": "E:\\xieProject\\test1\\WebX.Api\\WebX.Api.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
-      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Api\\obj\\",
+      "outputPath": "E:\\xieProject\\test1\\WebX.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

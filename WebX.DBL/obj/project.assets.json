@@ -1866,11 +1866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj",
+      "projectUniqueName": "E:\\xieProject\\test1\\WebX.DBL\\WebX.DAL.csproj",
       "projectName": "WebX.DAL",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj",
+      "projectPath": "E:\\xieProject\\test1\\WebX.DBL\\WebX.DAL.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
-      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\obj\\",
+      "outputPath": "E:\\xieProject\\test1\\WebX.DBL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1889,11 +1889,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
+            "E:\\xieProject\\test1\\WebX.COMMON\\WebX.COMMON.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.COMMON\\WebX.COMMON.csproj"
             },
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj"
             }
           }
         }

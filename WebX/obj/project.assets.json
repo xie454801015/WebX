@@ -13529,11 +13529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX\\WebX.csproj",
+      "projectUniqueName": "E:\\xieProject\\test1\\WebX\\WebX.csproj",
       "projectName": "WebX",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX\\WebX.csproj",
+      "projectPath": "E:\\xieProject\\test1\\WebX\\WebX.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
-      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX\\obj\\",
+      "outputPath": "E:\\xieProject\\test1\\WebX\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13552,23 +13552,23 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj"
+            "E:\\xieProject\\test1\\WebX.COMMON\\WebX.COMMON.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.COMMON\\WebX.COMMON.csproj"
             },
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\WebX.DbAccess.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\WebX.DbAccess.csproj"
+            "E:\\xieProject\\test1\\WebX.DbContext\\WebX.DbAccess.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.DbContext\\WebX.DbAccess.csproj"
             },
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DBL\\WebX.DAL.csproj"
+            "E:\\xieProject\\test1\\WebX.DBL\\WebX.DAL.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.DBL\\WebX.DAL.csproj"
             },
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DLL\\WebX.BLL.csproj"
+            "E:\\xieProject\\test1\\WebX.DLL\\WebX.BLL.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.DLL\\WebX.BLL.csproj"
             },
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj"
             },
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj"
+            "E:\\xieProject\\test1\\WebX.Utility\\WebX.Utility.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.Utility\\WebX.Utility.csproj"
             }
           }
         }

@@ -1831,11 +1831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj",
+      "projectUniqueName": "E:\\xieProject\\test1\\WebX.COMMON\\WebX.COMMON.csproj",
       "projectName": "WebX.COMMON",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\WebX.COMMON.csproj",
+      "projectPath": "E:\\xieProject\\test1\\WebX.COMMON\\WebX.COMMON.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
-      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.COMMON\\obj\\",
+      "outputPath": "E:\\xieProject\\test1\\WebX.COMMON\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

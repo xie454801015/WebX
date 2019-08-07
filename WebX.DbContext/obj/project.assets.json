@@ -3721,11 +3721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\WebX.DbAccess.csproj",
+      "projectUniqueName": "E:\\xieProject\\test1\\WebX.DbContext\\WebX.DbAccess.csproj",
       "projectName": "WebX.DbAccess",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\WebX.DbAccess.csproj",
+      "projectPath": "E:\\xieProject\\test1\\WebX.DbContext\\WebX.DbAccess.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
-      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.DbContext\\obj\\",
+      "outputPath": "E:\\xieProject\\test1\\WebX.DbContext\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3744,11 +3744,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj"
+            "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj"
             },
-            "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj": {
-              "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj"
+            "E:\\xieProject\\test1\\WebX.Utility\\WebX.Utility.csproj": {
+              "projectPath": "E:\\xieProject\\test1\\WebX.Utility\\WebX.Utility.csproj"
             }
           }
         }

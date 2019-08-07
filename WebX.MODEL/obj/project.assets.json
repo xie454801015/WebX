@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj",
+      "projectUniqueName": "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj",
       "projectName": "WebX.MODEL",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\WebX.MODEL.csproj",
+      "projectPath": "E:\\xieProject\\test1\\WebX.MODEL\\WebX.MODEL.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
-      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.MODEL\\obj\\",
+      "outputPath": "E:\\xieProject\\test1\\WebX.MODEL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

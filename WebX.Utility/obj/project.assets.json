@@ -789,11 +789,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj",
+      "projectUniqueName": "E:\\xieProject\\test1\\WebX.Utility\\WebX.Utility.csproj",
       "projectName": "WebX.Utility",
-      "projectPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\WebX.Utility.csproj",
+      "projectPath": "E:\\xieProject\\test1\\WebX.Utility\\WebX.Utility.csproj",
       "packagesPath": "C:\\Users\\yudj\\.nuget\\packages\\",
-      "outputPath": "E:\\xieProject\\WebXClone\\WebX\\WebX.Utility\\obj\\",
+      "outputPath": "E:\\xieProject\\test1\\WebX.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
